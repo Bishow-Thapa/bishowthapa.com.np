@@ -1,3 +1,6 @@
+# Homepage of my react application
+![Homepage](./src/images/homepage.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
