@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Mukta:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Mukta';
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Merriweather';
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-link.active {
+    position: relative;
+}
+
+.nav-link.active::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    border-radius: 24px;
+    /* width: 50%; */
+    width: 36px;
+    bottom: 0;
+    background-color: black;
+}
+
+/***********************************************************************/
+/* Main */
+/***********************************************************************/
+
+main {
+    padding: 6rem 0;
+    background: aliceblue;
+}
+
+.hero-title {
+    text-transform: uppercase;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.hero-description {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+}
+
+.main-img-wrapper {
+    height: 300px;
+    width: 300px;
+}
+
+.main-img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.hero-btn {
+    height: 44px;
+    width: 132px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #ffae19;
+    border: 0;
+}
+
+/******************************************************************/
+
+.about {
+    padding: 6rem 0;
+}
+
+.about-title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.about-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.about-description {
+    font-size: 1.2rem;
+}
+
+.about-wrapper-img {
+    
+}
+
+.about-img {
+    width: 100%;
+}

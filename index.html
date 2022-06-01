@@ -6,131 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bishow Website</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style>
-
-        .navbar-brand {
-            font-size: 1.8em;
-            font-weight: bold;
-        }
-
-        .nav-link {
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-
-        .nav-link.active {
-            position: relative;
-        }
-
-        .nav-link.active::before {
-            content: "";
-            position: absolute;
-            height: 3px;
-            border-radius: 24px;
-            /* width: 50%; */
-            width: 36px;
-            bottom: 0;
-            background-color: black;
-        }
-
-        /***********************************************************************/
-        /* Main */
-        /***********************************************************************/
-        
-        main {
-            padding: 6rem 0;
-            background: aliceblue;
-        }
-
-        .hero-title {
-            text-transform: uppercase;
-        }
-
-        .hero-section {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            height: 100%;
-        }
-
-        .hero-description {
-            font-size: 2em;
-            font-weight: bold;
-        }
-
-        .main-section {
-            display: flex;
-            justify-content: center;
-        }
-
-        .main-pad {
-            padding: 0 4em;
-        }
-
-        .main-img-wrapper {
-            height: 300px;
-            width: 300px;
-        }
-
-        .main-img {
-            object-fit: cover;
-            border-radius: 50%;
-        }
-
-        .hero-btn {
-            height: 44px;
-            width: 132px;
-            text-transform: uppercase;
-            font-weight: bold;
-            border-radius: 4px;
-            color: #ffffff;
-            background-color: #ffae19;
-            border: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- Header -->
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="">Bishow Thapa</a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarcontent" aria-controls="navbarcontent" aria-expanded="false" aria-label="Togel Navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="">Bishow Thapa</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarcontent" aria-controls="navbarcontent" aria-expanded="false" aria-label="Togel Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
     
-                            <div class="collapse navbar-collapse justify-content-end" id="navbarcontent">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="./about.html">About</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="#">Project</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="#">Service</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="#">Blog</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="#">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarcontent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
-
+    <!-- Header -->
+    
 
     <main>
         <div class="container">
@@ -157,24 +70,24 @@
         </div>
     </main>
 
-    <section>
+    <section class="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-center">
-                        <h5>About</h5>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <h5 class="about-title">About</h5>
+                        <p class="about-subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <p>
+                    <p class="about-description">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quibusdam neque non. Pariatur deleniti nulla sint quia molestias soluta? Magnam odit ad libero obcaecati. Ea quaerat quasi libero deserunt earum.
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quibusdam debitis nemo, officiis quae dolores! Assumenda eveniet sed id perferendis unde alias veritatis cupiditate aliquam et ipsam, ex itaque deleniti.
                     </p>
                 </div>
                 <div class="col-md-6">
-                    <div class="">
-                        <img src="https://i.ibb.co/dMBvSg1/myprofilepic-e430ce71.png" alt="Bishow Thapa">
+                    <div class="about-wrapper-img">
+                        <img class="about-img" src="https://i.ibb.co/dMBvSg1/myprofilepic-e430ce71.png" alt="Bishow Thapa">
                     </div>
                 </div>
             </div>
