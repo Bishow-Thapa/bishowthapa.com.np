@@ -15,16 +15,16 @@ body {
     font-family: 'Merriweather';
 }
 
-.nav-link {
+.nav-item .nav-link {
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.nav-link.active {
+.nav-item .nav-link.active {
     position: relative;
 }
 
-.nav-link.active::before {
+.nav-item .nav-link.active::before {
     content: "";
     position: absolute;
     height: 3px;
@@ -41,11 +41,16 @@ body {
 
 main {
     padding: 6rem 0;
-    background: aliceblue;
+    background: #a0b1c1;
 }
 
 .hero-title {
     text-transform: uppercase;
+    background: #c5c5c5;
+    padding: 0 0.4rem;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    font-size: .9rem;
 }
 
 .hero-section {
@@ -53,10 +58,11 @@ main {
     justify-content: center;
     flex-direction: column;
     height: 100%;
+    align-items: flex-start;
 }
 
 .hero-description {
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: bold;
 }
 
@@ -66,8 +72,10 @@ main {
 }
 
 .main-img-wrapper {
-    height: 300px;
-    width: 300px;
+    height: 320px;
+    width: 320px;
+    /* height: 60%;
+    width: 60%; */
 }
 
 .main-img {
@@ -82,7 +90,7 @@ main {
     font-weight: bold;
     border-radius: 4px;
     color: #ffffff;
-    background-color: #ffae19;
+    background-color: #d98f06;
     border: 0;
 }
 
@@ -90,14 +98,15 @@ main {
 
 .about {
     padding: 6rem 0;
+    background: #f5f5f5;
 }
 
-.about-title {
+.about-title, .project-title, .blog-title, .service-title, .contact-title {
     font-size: 1.8rem;
     text-transform: uppercase;
 }
 
-.about-subtitle {
+.about-subtitle, .contact-subtitle {
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
@@ -107,9 +116,154 @@ main {
 }
 
 .about-wrapper-img {
-    
+    display: flex;
+    justify-content: flex-end;
 }
 
 .about-img {
-    width: 100%;
+    width: 400px;
+}
+
+/*******************************************************/
+
+.project, .service {
+    padding: 6rem 0;
+}
+
+.service {
+    background: lightblue;
+}
+
+.service-sec {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: aliceblue;
+    aspect-ratio: 1/1;
+}
+
+.blog {
+    padding: 6rem 0;
+}
+
+.blog-subtitle {
+    margin-bottom: 4rem;
+}
+
+.blog-btn {
+    color: #fff;
+    background: #EDB25A;
+    border: 0;
+    padding: 4px 16px;
+    border-radius: 2px;
+}
+
+.blog-sec {
+    display: flex;
+}
+
+.blog-sec-img {
+    width: 36%;
+    object-fit: cover;
+    margin-right: 18px;
+}
+
+/**************************************************************/
+
+.contact {
+    padding: 6rem 0;
+    background: aliceblue;
+}
+
+.contact-field-wrapper {
+    padding-right: 0;
+}
+
+.contact-map-wrapper {
+    padding-left: 0;
+}
+
+.contact-input {
+    border: 0;
+    color: #fff;
+    border-bottom: 1px solid#ffffff;
+    border-radius: 0;
+    background: none;
+    padding: 0 0;
+}
+
+.contact-input:focus {
+    color: #fff;
+    background: none;
+    border-color: none!important;
+    /* border-bottom: 1px solid#ffffff; */
+    box-shadow: none;
+}
+
+.contact-form {
+    background-color: #000000;
+    height: 100%;
+    padding: 26px;
+}
+
+.contact-form-title {
+    color: #ffffff;
+    margin: 0;
+}
+
+
+.contact-map {
+    height: 100%;
+}
+
+.contact-btn {
+    color: #fff;
+    padding: 8px 32px;
+    border-radius: 4px;
+    background: #EDB25A;
+}
+
+
+/******************************************************/
+
+footer {
+    padding: 4rem 0;
+    color: #ffffff;
+    background: #1e1d1d;
+}
+
+
+
+/******************************************************/
+/******************************************************/
+
+@media only screen and (max-width: 767px) {
+    .about-wrapper-img {
+        justify-content: flex-start;
+    }
+
+    .main-section {
+        margin-bottom: 2rem;
+    }
+
+    .main-img-wrapper {
+        height: 280px;
+        width: 280px;
+    }
+
+    .contact-field-wrapper {
+        padding-right: 12px;
+    }
+    
+    .contact-map-wrapper {
+        padding-left: 12px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .blog-sec {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
