@@ -1,12 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Mukta:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
 .App {
   text-align: center;
 }
 
 * { box-sizing: border-box; }
 
+
 body {
   font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
 }
+
+
+
+/***********************************************************************************/
 
 a {
   font-weight: bold;
@@ -38,17 +46,50 @@ a:active {
   color: yellow;
 }
 
-/* Added */
+
+/***************************************************************************************/
+/*
+ * HEADER
+ */
+
+header {
+  padding: 1.2em 8em;
+}
+
+.myLogo {
+  font-size: 1.8em;
+  font-weight: 700;
+  margin: 0;
+}
+
+
 .Nav-style {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+  text-transform: uppercase;
 }
+
+.headerNav a:not(:last-child) {
+  margin-right: 50px;
+}
+
+.headerNav a {
+  color: #000000;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/***********************************************************************/
+
 
 .ImgStyle {
   margin: 60px 0;
   transform: rotate(-20deg);
   transition: transform 2s;
   box-shadow: 5px 5px 8px gray;
+  max-width: 80%;
 }
 
 .ImgStyle:hover {
@@ -90,15 +131,129 @@ ul {
   list-style-type: none;
 }
 
-footer {
-  margin-top: 40px;
+
+/************************* Home ******************************/
+/*
+ * Main 
+ */
+
+.rootWrapper {
+  display: flex;
+  flex-direction: row;
+
+  /* padding: 1.2em 8em; */
+  padding: 1.8em 8em;
+  background: aliceblue;
 }
 
-/* @keyframes circle {
-  from {
-    background-color: red;
-  }
-  to {
-    background-color: yellow;
-  }
+.imgWrapper {
+  flex-basis: 100%;
+  /* background-color: aqua; */
+}
+
+
+.contentWrapper {
+  flex-basis: 100%;
+  text-align: left;
+  /* background-color: aquamarine; */
+}
+
+.authorName {
+  /* font-size: 2em; */
+  font-size: 1.6em;
+  font-weight: 600;
+  margin: 1em 0;
+}
+
+.authorDescription {
+  font-size: 1em;
+  line-height: 1.6;
+  word-spacing: 2px;
+}
+
+.authorBtn {
+  color: #ffffff;
+  background: #000000;
+  height: 40px;
+  width: 90px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2em;
+
+  box-shadow: 4px 4px 0px 0px #c51313;
+}
+
+.authorBtn:hover {
+  box-shadow: 4px 4px 6px 0px #c51313;
+}
+
+
+/************************************************************************/
+
+.authorSocialMedia {
+  margin-top: 3em;
+}
+
+.socialMediaTitle {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.socialMedia {
+  margin-right: 16px;
+}
+
+.socialMediaIcon {
+  height: 26px !important;
+  width: 26px !important;
+}
+
+/**************************************************************/
+
+/* .btnTitle {
+  margin-right: 8px;
 } */
+
+/*
+ * Footer
+ */
+
+footer {
+  padding: 1.2em 8em;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+}
+
+/*
+ * Media Queries
+ */
+ 
+@media only screen and (max-width: 1024px) {
+  .rootWrapper {
+    flex-wrap: wrap!important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 1.2em 4em;
+  }
+
+  .rootWrapper {
+    padding: 1.2em 4em;
+  }
+
+  footer {
+    padding: 1.2em 4em;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .myLogo {
+    font-size: 1.6em;
+  }
+}

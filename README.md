@@ -1,5 +1,5 @@
 # Homepage of my react application
-![Homepage](./src/images/homepage.png)
+![Homepage](./src/images/screenshot-homepage.png)
 
 # Getting Started with Create React App
 
