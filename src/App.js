@@ -9,7 +9,7 @@ import NotFound from './components/NotFound'
 
 import ReactToolTip from 'react-tooltip'
 import { MdCopyright } from 'react-icons/md';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 
 import { FaHeart } from "react-icons/fa";
 
@@ -20,9 +20,9 @@ function App() {
   // React Hooks
   // https://devdojo.com/krissanawat101/3-ways-to-set-a-document-title-in-react
   
-  useEffect(() => {
-    document.title = "Bishow Thapa";
-  }, [])
+  // useEffect(() => {
+  //   document.title = "Bishow Thapa";
+  // }, [])
 
   
 
