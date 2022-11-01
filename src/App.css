@@ -48,6 +48,8 @@ body {
   margin: 0;
   text-transform: uppercase;
   font-size: 1.8em;
+  /* added */
+  padding: 2em;
 }
 
 .wrapper-item:hover .wrapper-item-overlay {
