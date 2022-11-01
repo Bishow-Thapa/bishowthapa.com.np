@@ -21,52 +21,52 @@ function App() {
   return (
     <div className="App">
       
-      <nav id="nav-menu" class="navbar navbar-expand-lg navbar-light sticky-top">
-        <div class="container">
-          <a class="navbar-brand" href="">Bishow Thapa</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarcontent" aria-controls="navbarcontent" aria-expanded="false" aria-label="Togel Navigation">
-            <span class="navbar-toggler-icon"></span>
+      <nav id="nav-menu" className="navbar navbar-expand-lg navbar-light sticky-top">
+        <div className="container">
+          <a className="navbar-brand" href="">Bishow Thapa</a>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarcontent" aria-controls="navbarcontent" aria-expanded="false" aria-label="Togel Navigation">
+            <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse justify-content-end" id="navbarcontent">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="menu-link nav-link active" aria-current="page" href="#">Home</a>
+          <div className="collapse navbar-collapse justify-content-end" id="navbarcontent">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a className="menu-link nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="menu-link nav-link" aria-current="page" href="#about">About</a>
+              <li className="nav-item">
+                <a className="menu-link nav-link" aria-current="page" href="#about">About</a>
               </li>
-              <li class="nav-item">
-                <a class="menu-link nav-link" aria-current="page" href="#project">Project</a>
+              <li className="nav-item">
+                <a className="menu-link nav-link" aria-current="page" href="#project">Project</a>
               </li>
-              <li class="nav-item">
-                <a class="menu-link nav-link" aria-current="page" href="#service">Service</a>
+              <li className="nav-item">
+                <a className="menu-link nav-link" aria-current="page" href="#service">Service</a>
               </li>
-              <li class="nav-item">
-                <a class="menu-link nav-link" aria-current="page" href="#blog">Blog</a>
+              <li className="nav-item">
+                <a className="menu-link nav-link" aria-current="page" href="#blog">Blog</a>
               </li>
-              <li class="nav-item">
-                <a class="menu-link nav-link" aria-current="page" href="#contact">Contact</a>
+              <li className="nav-item">
+                <a className="menu-link nav-link" aria-current="page" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      <section class="bt-main">
-        <div class="container">
-          <div class="row main-pad">
-            <div class="col-md-6">
-              <div class="hero-section">
-                <span class="hero-title">Software Engineer</span>
-                <p class="hero-description">Developing Quality Software. <br/>Truth can only be found in <br/> one place: the code</p>
-                <button class="hero-btn" type="button">Hire Me</button>
+      <section className="bt-main">
+        <div className="container">
+          <div className="row main-pad">
+            <div className="col-md-6">
+              <div className="hero-section">
+                <span className="hero-title">Software Engineer</span>
+                <p className="hero-description">Developing Quality Software. <br/>Truth can only be found in <br/> one place: the code</p>
+                <button className="hero-btn" type="button">Hire Me</button>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="main-section">
-                  <div class="main-img-wrapper">
-                      <img class="main-img" src="https://avatars.githubusercontent.com/u/25550945?v=4" height="100%" width="100%" alt=""/>
+            <div className="col-md-6">
+              <div className="main-section">
+                  <div className="main-img-wrapper">
+                      <img className="main-img" src="https://avatars.githubusercontent.com/u/25550945?v=4" height="100%" width="100%" alt=""/>
                   </div>
               </div>
             </div>
@@ -75,24 +75,24 @@ function App() {
       </section>
 
       <section id="about">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="text-center">
-                  <h5 class="about-title">About</h5>
-                  <p class="about-subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="text-center">
+                  <h5 className="about-title">About</h5>
+                  <p className="about-subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
-            <div class="col-md-6">
-              <p class="about-description">
+            <div className="col-md-6">
+              <p className="about-description">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quibusdam neque non. Pariatur deleniti nulla sint quia molestias soluta? Magnam odit ad libero obcaecati. Ea quaerat quasi libero deserunt earum.
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quibusdam debitis nemo, officiis quae dolores! Assumenda eveniet sed id perferendis unde alias veritatis cupiditate aliquam et ipsam, ex itaque deleniti.
               </p>
               <button type="button" onClick={downloadCV} className="authorBtn" download="resume"><span className="btnTitle">CV</span></button>
             </div>
-            <div class="col-md-6">
-              <div class="about-wrapper-img">
-                <img class="about-img" src="https://i.ibb.co/dMBvSg1/myprofilepic-e430ce71.png" alt="Bishow Thapa"/>
+            <div className="col-md-6">
+              <div className="about-wrapper-img">
+                <img className="about-img" src="https://i.ibb.co/dMBvSg1/myprofilepic-e430ce71.png" alt="Bishow Thapa"/>
               </div>
             </div>
           </div>
@@ -100,72 +100,132 @@ function App() {
       </section>
 
       <section id="project">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="text-center">
-                <h5 class="project-title">Project</h5>
-                <p class="project-subtitle">sit amet consectetur adipisicing elit.</p>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="text-center">
+                <h5 className="project-title">Project</h5>
+                <p className="project-subtitle">sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
-            <nav class="d-flex justify-content-center mb-5">
-              <div class="nav nav-pills" id="nav-tab" role="tablist">
-                <button class="nav-link active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all" type="button" role="tab" aria-controls="nav-all" aria-selected="true">All</button>
-                <button class="nav-link" id="nav-design-tab" data-bs-toggle="tab" data-bs-target="#nav-design" type="button" role="tab" aria-controls="nav-design" aria-selected="false">Design</button>
-                <button class="nav-link" id="nav-code-tab" data-bs-toggle="tab" data-bs-target="#nav-code" type="button" role="tab" aria-controls="nav-code" aria-selected="false">Code</button>
+            <nav className="d-flex justify-content-center mb-5">
+              <div className="nav nav-pills" id="nav-tab" role="tablist">
+                <button className="nav-link active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all" type="button" role="tab" aria-controls="nav-all" aria-selected="true">All</button>
+                <button className="nav-link" id="nav-design-tab" data-bs-toggle="tab" data-bs-target="#nav-design" type="button" role="tab" aria-controls="nav-design" aria-selected="false">UI/UX Design</button>
+                <button className="nav-link" id="nav-code-tab" data-bs-toggle="tab" data-bs-target="#nav-code" type="button" role="tab" aria-controls="nav-code" aria-selected="false">Code</button>
               </div>
             </nav>
-            <div class="tab-content" id="nav-pillsContent">
-              <div class="tab-pane active" id="nav-all" role="tabpanel" aria-alabelledby="nav-all-tab">
-                <div class="container p-0">
-                  <div class="row">
-                    <div class="col-md-4 mb-4">
-                      <img src="./images/all.PNG" alt="" width="100%" height="100%"/>
+            <div className="tab-content" id="nav-pillsContent">
+              <div className="tab-pane active" id="nav-all" role="tabpanel" aria-alabelledby="nav-all-tab">
+                <div className="container p-0">
+                  <div className="row">
+                    <div className="col-md-4 mb-4">
+                      <a className="wrapper-item" href="">
+                        <img className="wrapper-item-img" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/b4ad77138072599.621652e59bf30.png" alt="" width="100%" height="100%"/>
+                        <div className="wrapper-item-overlay">
+                          <p className="wrapper-item-descrip">Hello World</p>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-md-4 mb-4">
-                      <img src="./images/design.PNG" alt="" width="100%" height="100%"/>
+                    <div className="col-md-4 mb-4">
+                      <a className="wrapper-item" href="">
+                        <img className="wrapper-item-img" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/ddc158139004901.62282d2b25e88.png" alt="" width="100%" height="100%"/>
+                        <div className="wrapper-item-overlay">
+                          <p className="wrapper-item-descrip">Hello World</p>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-md-4 mb-4">
-                      <img src="./images/code.PNG" alt="" width="100%" height="100%"/>
+                    <div className="col-md-4 mb-4">
+                      <a className="wrapper-item" href="">
+                        <img className="wrapper-item-img" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/4e6128135274911.61e562fe8fc01.png" alt="" width="100%" height="100%"/>
+                        <div className="wrapper-item-overlay">
+                          <p className="wrapper-item-descrip">Hello World</p>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-md-4 mb-4">
-                      <img src="./images/code2.PNG" alt="" width="100%" height="100%"/>
+                    <div className="col-md-4 mb-4">
+                      <a className="wrapper-item" href="">
+                        <img className="wrapper-item-img" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/c3c57e135220633.61e44c76c3837.png" alt="" width="100%" height="100%"/>
+                        <div className="wrapper-item-overlay">
+                          <p className="wrapper-item-descrip">Hello World</p>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-md-4 mb-4">
-                      <img src="./images/all.PNG" alt="" width="100%" height="100%"/>
+                    <div className="col-md-4 mb-4">
+                      <a className="wrapper-item" href="">
+                        <img className="wrapper-item-img" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/374255129372273.61696f650e4a5.png" alt="" width="100%" height="100%"/>
+                        <div className="wrapper-item-overlay">
+                          <p className="wrapper-item-descrip">Hello World</p>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-md-4 mb-4">
-                      <img src="./images/design.PNG" alt="" width="100%" height="100%"/>
+                    <div className="col-md-4 mb-4">
+                      <a className="wrapper-item" href="">
+                        <img className="wrapper-item-img" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/4e6128135274911.61e562fe8fc01.png" alt="" width="100%" height="100%"/>
+                        <div className="wrapper-item-overlay">
+                          <p className="wrapper-item-descrip">Hello World</p>
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="tab-pane" id="nav-design" role="tabpanel" aria-alabelledby="nav-design-tab">
-                <div class="container p-0">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <img src="https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80" alt="" width="100%" height="100%"/>
+              <div className="tab-pane" id="nav-design" role="tabpanel" aria-alabelledby="nav-design-tab">
+                <div className="container p-0">
+                    <div className="row">
+                      <div className="col-md-4">
+                        <a className="wrapper-item" href="">
+                          <img className="wrapper-item-img" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/b4ad77138072599.621652e59bf30.png" alt="" width="100%" height="100%"/>
+                          <div className="wrapper-item-overlay">
+                            <p className="wrapper-item-descrip">Hello World</p>
+                          </div>
+                        </a>
                       </div>
-                      <div class="col-md-4">
-                        <img src="https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80" alt="" width="100%" height="100%"/>
+                      <div className="col-md-4">
+                        <a className="wrapper-item" href="">
+                          <img className="wrapper-item-img" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/b4ad77138072599.621652e59bf30.png" alt="" width="100%" height="100%"/>
+                          <div className="wrapper-item-overlay">
+                            <p className="wrapper-item-descrip">Hello World</p>
+                          </div>
+                        </a>
                       </div>
-                      <div class="col-md-4">
-                        <img src="https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80" alt="" width="100%" height="100%"/>
+                      <div className="col-md-4">
+                        <a className="wrapper-item" href="">
+                          <img className="wrapper-item-img" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/b4ad77138072599.621652e59bf30.png" alt="" width="100%" height="100%"/>
+                          <div className="wrapper-item-overlay">
+                            <p className="wrapper-item-descrip">Hello World</p>
+                          </div>
+                        </a>
                       </div>
                     </div>
                 </div>
               </div>
-              <div class="tab-pane" id="nav-code" role="tabpanel" aria-alabelledby="nav-code-tab">
-                <div class="container p-0">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <img src="https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80" alt="" width="100%" height="100%"/>
+              <div className="tab-pane" id="nav-code" role="tabpanel" aria-alabelledby="nav-code-tab">
+                <div className="container p-0">
+                  <div className="row">
+                    <div className="col-md-4">
+                      <a className="wrapper-item" href="https://github.com/bt-frontend/Investing-Service" rel="noreferrer noopener" target="_blank" data-tip="bishowthapa">
+                        <img className="wrapper-item-img" src="https://raw.githubusercontent.com/bt-frontend/Investing-Service/main/Investing%20Service%20thumbnail.jpg" alt="" width="100%" height="100%"/>
+                        <div className="wrapper-item-overlay">
+                          <p className="wrapper-item-descrip">Investing Service</p>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-md-4">
-                      <img src="./images/9.PNG" alt="" width="100%" height="100%"/>
+                    <div className="col-md-4">
+                      <a className="wrapper-item" href="">
+                        <img className="wrapper-item-img" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/b4ad77138072599.621652e59bf30.png" alt="" width="100%" height="100%"/>
+                        <div className="wrapper-item-overlay">
+                          <p className="wrapper-item-descrip">Hello World</p>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-md-4">
-                      <img src="https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80" alt="" width="100%" height="100%"/>
+                    <div className="col-md-4">
+                      <a className="wrapper-item" href="https://github.com/bt-frontend/Education-Consultancy" rel="noreferrer noopener" target="_blank" data-tip="bishowthapa">
+                        <img className="wrapper-item-img" src="https://raw.githubusercontent.com/bt-frontend/Education-Consultancy/main/Education%20Consultancy%20Thumbnail.png" alt="" width="100%" height="100%"/>
+                        <div className="wrapper-item-overlay">
+                          <p className="wrapper-item-descrip">Education Consultancy</p>
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -176,16 +236,16 @@ function App() {
       </section>
 
       <section id="service">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="text-center">
-                <h5 class="service-title">Service</h5>
-                <p class="service-subtitle">sit amet consectetur adipisicing elit.</p>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="text-center">
+                <h5 className="service-title">Service</h5>
+                <p className="service-subtitle">sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="service-sec mb-4">
+            <div className="col-md-4">
+              <div className="service-sec mb-4">
                 <svg width="269" height="173" viewBox="0 0 269 173" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.3">
                     <path opacity="0.3" d="M194.354 1V115.133H231.426V1H194.354ZM229.559 3.53849V20.3821H214.112V3.53849H229.559ZM211.809 3.53849V20.3821H196.202V3.53849H211.809ZM196.202 23.0534H211.809V39.7679H196.202V23.0534ZM229.54 112.602H196.202V42.6593H229.54V112.602ZM214.112 39.7679V23.0723H229.54V39.7869L214.112 39.7679Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
@@ -376,8 +436,8 @@ function App() {
                 <p>UX Research</p>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="service-sec mb-4">
+            <div className="col-md-4">
+              <div className="service-sec mb-4">
                 <svg width="196" height="194" viewBox="0 0 196 194" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M38.975 179.623C7.6395 161.528 7.6395 132.194 38.975 114.103C70.3106 96.0119 121.122 96.0119 152.458 114.103C183.793 132.194 183.798 161.528 152.458 179.623C121.118 197.718 70.3106 197.718 38.975 179.623Z" fill="#F5F5F5"/>
                     <path d="M190.67 138.061C189.761 139.649 187.776 141.853 186.357 144.152C184.335 147.46 182.983 152.116 183.463 160.019L182.404 159.407L179.799 157.901C179.067 153.737 179.104 148.804 180.213 142.453C181.234 136.593 184.86 130.978 188.317 130.627C191.555 130.296 192.936 134.104 190.67 138.061Z" fill="#E0E0E0"/>
@@ -908,8 +968,8 @@ function App() {
                 <p>Design & Prototype</p>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="service-sec mb-4">
+            <div className="col-md-4">
+              <div className="service-sec mb-4">
                 <svg width="253" height="198" viewBox="0 0 253 198" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M233.265 163.069C230.953 165.963 229.823 167.572 229.337 168.301C229.941 165.121 230.824 162 231.975 158.975C232.84 156.63 233.38 154.178 233.578 151.687L233.368 151.802L233.163 151.419C233.246 151.38 241.122 147.196 243.351 143.255L243.722 143.466C241.71 147.03 235.495 150.633 233.789 151.572C235.405 151.419 240.451 150.646 243.453 146.941C247.056 142.47 246.424 136.97 246.424 136.97C246.424 136.97 239.634 141.633 236.874 145.242C235.598 146.893 234.526 148.693 233.681 150.601C233.804 147.661 233.579 144.718 233.01 141.831C235.284 140.074 243.588 133.195 244.514 128.066C245.574 122.126 244.086 111.938 244.086 111.938C243.231 114.053 242.239 116.11 241.116 118.095C239.199 121.487 233.265 126.795 232.205 132.524C231.937 133.957 231.796 135.411 231.784 136.868C230.827 133.672 229.684 130.534 228.36 127.472C228.008 126.645 227.724 125.79 227.51 124.917L227.325 124.808C227.363 124.745 231.158 118.293 231.158 116.441H231.592C231.592 118.172 228.673 123.307 227.868 124.687C229.203 123.889 231.375 122.241 232.192 119.686C232.886 117.289 232.679 114.722 231.611 112.468C231.611 112.468 228.385 117.207 227.504 120.241C227.089 121.625 226.841 123.053 226.763 124.495C226.094 122.675 225.204 120.944 224.112 119.341C222.765 117.365 221.691 115.217 220.919 112.953C220.919 112.953 218.587 116.99 220.28 121.257C221.679 124.745 225.645 126.08 227.019 126.45C227.172 126.91 227.338 127.363 227.523 127.791C229.384 131.998 230.841 136.372 231.873 140.854C230.552 139.016 228.998 137.358 227.249 135.923C225.392 134.426 223.747 132.686 222.356 130.749C222.356 130.749 221.289 135.284 224.144 138.854C226.482 141.774 230.634 141.914 232.077 141.869C233.061 147.011 233.17 152.377 231.509 157.557C231.4 156.554 230.794 153.814 227.459 150.748C223.256 146.883 214.831 134.511 214.831 134.511C214.831 134.511 215.508 149.113 219.539 153.916C223.237 158.311 230.219 158.055 231.362 157.985C231.285 158.208 231.209 158.438 231.126 158.668C228.468 165.803 227.932 170.804 227.843 173.462H222.828V196.591H236.625V173.481H228.756C228.809 171.971 228.965 170.466 229.222 168.978L229.075 169.022L228.96 168.601C229.05 168.601 237.692 166.142 243.735 159.927L244.041 160.233C239.167 165.247 232.633 167.828 230.123 168.684C232.614 168.377 238.708 167.457 241.544 165.631C245.146 163.293 248.333 156.292 248.333 156.292C248.333 156.292 236.664 158.841 233.265 163.069ZM226.699 125.486C225.286 124.737 224.058 123.684 223.101 122.402C222.144 121.121 221.484 119.643 221.168 118.076L221.589 117.993C221.892 119.493 222.524 120.907 223.438 122.134C224.353 123.361 225.527 124.37 226.878 125.09L226.699 125.486ZM232.806 141.965L232.71 142.112L232.55 142.048C232.307 141.952 226.661 139.627 224.361 136.268L224.719 136.025C226.731 138.963 231.592 141.167 232.544 141.582C233.278 140.458 237.864 133.342 239.461 128.864L239.87 129.011C238.126 133.917 232.863 141.901 232.806 141.991V141.965ZM230.813 157.819C230.742 157.819 224.016 155.264 221.021 149.451L221.404 149.253C224.323 154.919 230.896 157.391 230.985 157.416L230.813 157.819Z" fill="#263238"/>
                     <path d="M195.573 83.8008H96.0693V196.61H195.573V83.8008Z" stroke="#263238" stroke-miterlimit="10"/>
@@ -1078,48 +1138,48 @@ function App() {
       </section>
 
       <section id="blog">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="text-center">
-                  <h5 class="blog-title">Blog</h5>
-                  <p class="blog-subtitle">illo molestiae, odit perferendis nemo sapiente aliquid, libero harum?</p>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="text-center">
+                  <h5 className="blog-title">Blog</h5>
+                  <p className="blog-subtitle">illo molestiae, odit perferendis nemo sapiente aliquid, libero harum?</p>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="blog-sec mb-4">
-                <img class="blog-sec-img" src="./images/design.PNG" width="36%" alt="Blog1"/>
+            <div className="col-md-6">
+              <div className="blog-sec mb-4">
+                <img className="blog-sec-img" src="./images/design.PNG" width="36%" alt="Blog1"/>
                 <div>
-                  <p class="blog-sec-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, dolore pariatur quam obcaecati illum est ad quo distinctio magnam nulla asperiores corrupti quae quis, vitae minus repellendus officia eveniet! Quisquam.</p>
-                  <button class="blog-btn" type="button">Read More</button>
+                  <p className="blog-sec-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, dolore pariatur quam obcaecati illum est ad quo distinctio magnam nulla asperiores corrupti quae quis, vitae minus repellendus officia eveniet! Quisquam.</p>
+                  <button className="blog-btn" type="button">Read More</button>
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="blog-sec mb-4">
-                <img class="blog-sec-img" src="./images/design.PNG" width="36%" alt="Blog1"/>
+            <div className="col-md-6">
+              <div className="blog-sec mb-4">
+                <img className="blog-sec-img" src="./images/design.PNG" width="36%" alt="Blog1"/>
                 
                 <div>
-                  <p class="blog-sec-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, dolore pariatur quam obcaecati illum est ad quo distinctio magnam nulla asperiores corrupti quae quis, vitae minus repellendus officia eveniet! Quisquam.</p>
-                  <button class="blog-btn" type="button">Read More</button>
+                  <p className="blog-sec-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, dolore pariatur quam obcaecati illum est ad quo distinctio magnam nulla asperiores corrupti quae quis, vitae minus repellendus officia eveniet! Quisquam.</p>
+                  <button className="blog-btn" type="button">Read More</button>
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="blog-sec mb-4">
-                <img class="blog-sec-img" src="./images/design.PNG" width="36%" alt="Blog1"/>
+            <div className="col-md-6">
+              <div className="blog-sec mb-4">
+                <img className="blog-sec-img" src="./images/design.PNG" width="36%" alt="Blog1"/>
                 <div>
-                  <p class="blog-sec-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, dolore pariatur quam obcaecati illum est ad quo distinctio magnam nulla asperiores corrupti quae quis, vitae minus repellendus officia eveniet! Quisquam.</p>
-                  <button class="blog-btn" type="button">Read More</button>
+                  <p className="blog-sec-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, dolore pariatur quam obcaecati illum est ad quo distinctio magnam nulla asperiores corrupti quae quis, vitae minus repellendus officia eveniet! Quisquam.</p>
+                  <button className="blog-btn" type="button">Read More</button>
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="blog-sec mb-4">
-                <img class="blog-sec-img" src="./images/design.PNG" width="36%" alt="Blog1"/>
+            <div className="col-md-6">
+              <div className="blog-sec mb-4">
+                <img className="blog-sec-img" src="./images/design.PNG" width="36%" alt="Blog1"/>
                 <div>
-                  <p class="blog-sec-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, dolore pariatur quam obcaecati illum est ad quo distinctio magnam nulla asperiores corrupti quae quis, vitae minus repellendus officia eveniet! Quisquam.</p>
-                  <button class="blog-btn" type="button">Read More</button>
+                  <p className="blog-sec-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, dolore pariatur quam obcaecati illum est ad quo distinctio magnam nulla asperiores corrupti quae quis, vitae minus repellendus officia eveniet! Quisquam.</p>
+                  <button className="blog-btn" type="button">Read More</button>
                 </div>
               </div>
             </div>
@@ -1128,51 +1188,51 @@ function App() {
       </section>
 
        <section id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="text-center">
-                <h5 class="contact-title">Contact</h5>
-                <p class="contact-subtitle">in autem ullam deleniti mollitia id! Provident, ullam voluptate.</p>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="text-center">
+                <h5 className="contact-title">Contact</h5>
+                <p className="contact-subtitle">in autem ullam deleniti mollitia id! Provident, ullam voluptate.</p>
               </div>
             </div>
-            <div class="col-md-6 contact-field-wrapper">
-              <form class="contact-form" action="">
-                <div class="row">
-                  <div class="col">
-                    <div class="mb-5">
-                      <p class="contact-form-title">FirstName</p>
-                      <input class="form-control contact-input" type="text"/>
+            <div className="col-md-6 contact-field-wrapper">
+              <form className="contact-form" action="">
+                <div className="row">
+                  <div className="col">
+                    <div className="mb-5">
+                      <p className="contact-form-title">FirstName</p>
+                      <input className="form-control contact-input" type="text"/>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="mb-5">
-                      <p class="contact-form-title">LastName</p>
-                      <input class="form-control contact-input" type="text"/>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <div class="mb-5">
-                      <p class="contact-form-title">Email</p>
-                      <input class="form-control contact-input" type="email"/>
+                  <div className="col">
+                    <div className="mb-5">
+                      <p className="contact-form-title">LastName</p>
+                      <input className="form-control contact-input" type="text"/>
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col">
-                    <div class="mb-5">
-                      <p class="contact-form-title">Message</p>
-                      <textarea class="form-control contact-input" name="" id="" cols="30" rows="3c"></textarea>
+                <div className="row">
+                  <div className="col">
+                    <div className="mb-5">
+                      <p className="contact-form-title">Email</p>
+                      <input className="form-control contact-input" type="email"/>
                     </div>
                   </div>
                 </div>
-                <button class="contact-btn" type="button">Send Me</button>
+                <div className="row">
+                  <div className="col">
+                    <div className="mb-5">
+                      <p className="contact-form-title">Message</p>
+                      <textarea className="form-control contact-input" name="" id="" cols="30" rows="3c"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <button className="contact-btn" type="button">Send Me</button>
               </form>
             </div>
-            <div class="col-md-6 contact-map-wrapper">
-              <div class="contact-map">
+            <div className="col-md-6 contact-map-wrapper">
+              <div className="contact-map">
                 <img src="./images/map.png" height="100%" width="100%" alt=""/>
               </div>
             </div>
@@ -1181,15 +1241,15 @@ function App() {
       </section>
 
       <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-3">
               <h5>Bishow Thapa</h5>
               <p>Software Engineer</p>
             </div>
-            <div class="col-md-3">
+            <div className="col-md-3">
               <h5>Explore</h5>
-              <ul class="list-unstyled">
+              <ul className="list-unstyled">
                   <li><a href="">Home</a></li>
                   <li><a href="">About</a></li>
                   <li><a href="">Projects</a></li>
@@ -1198,9 +1258,9 @@ function App() {
                   <li><a href="">Contact</a></li>
               </ul>
             </div>
-            <div class="col-md-3">
+            <div className="col-md-3">
               <h5>Social Media</h5>
-              <ul class="list-unstyled">
+              <ul className="list-unstyled">
                   <li><a href="">Facebook</a></li>
                   <li><a href="https://www.linkedin.com/in/bishowthapa/" rel="noreferrer noopener" target="_blank" data-tip="bishowthapa">LinkedIn</a></li>
                   <li><a href="https://twitter.com/BishowThapa12" rel="noreferrer noopener" target="_blank" data-tip="@BishowThapa12">Twitter</a></li>
@@ -1209,11 +1269,11 @@ function App() {
                   <li><a href="">Instagram</a></li>
               </ul>
             </div>
-            <div class="col-md-3">
+            <div className="col-md-3">
               <h5>Address</h5>
             </div>
-            <div class="col-md-12">
-              <p class="text-center m-0 pt-4">Made with <FaHeart color= "red" /> by Bishow Thapa <span data-tip="copyright"><MdCopyright/></span> {thisyear.getFullYear()}</p> 
+            <div className="col-md-12">
+              <p className="text-center m-0 pt-4">Made with <FaHeart color= "red" /> by Bishow Thapa <span data-tip="copyright"><MdCopyright/></span> {thisyear.getFullYear()}</p> 
             </div>
           </div>
         </div>
