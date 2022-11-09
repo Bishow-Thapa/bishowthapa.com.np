@@ -1,11 +1,12 @@
 // import logo from './logo.svg';
 import React from 'react';
 import './App.css';
-
+// Images
+// import blogImg from './images/vcs.jpg';
 import resume from './files/sample-resume.pdf';
 import { saveAs } from "file-saver";
 
-import { FaHeart } from "react-icons/fa";
+import { FaHeart, FaDownload } from "react-icons/fa";
 import { MdCopyright } from 'react-icons/md';
 
 const thisyear = new Date();
@@ -23,7 +24,7 @@ function App() {
       
       <nav id="nav-menu" className="navbar navbar-expand-lg navbar-light sticky-top">
         <div className="container">
-          <a className="navbar-brand" href="">Bishow Thapa</a>
+          <a className="navbar-brand" href="/">Bishow Thapa</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarcontent" aria-controls="navbarcontent" aria-expanded="false" aria-label="Togel Navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -88,7 +89,7 @@ function App() {
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quibusdam neque non. Pariatur deleniti nulla sint quia molestias soluta? Magnam odit ad libero obcaecati. Ea quaerat quasi libero deserunt earum.
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quibusdam debitis nemo, officiis quae dolores! Assumenda eveniet sed id perferendis unde alias veritatis cupiditate aliquam et ipsam, ex itaque deleniti.
               </p>
-              <button type="button" onClick={downloadCV} className="authorBtn" download="resume"><span className="btnTitle">CV</span></button>
+              <button type="button" onClick={downloadCV} className="authorBtn" download="resume"><span className="btnTitle">Download CV</span><FaDownload size="12px"/></button>
             </div>
             <div className="col-md-6">
               <div className="about-wrapper-img">
@@ -1148,7 +1149,7 @@ function App() {
             </div>
             <div className="col-md-6">
               <div className="blog-sec mb-4">
-                <img className="blog-sec-img" src="./images/design.PNG" width="36%" alt="Blog1"/>
+                <img className="blog-sec-img" src={require('./images/blog/vcs.jpg').default} width="36%" alt="Blog1"/>
                 <div>
                   <p className="blog-sec-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, dolore pariatur quam obcaecati illum est ad quo distinctio magnam nulla asperiores corrupti quae quis, vitae minus repellendus officia eveniet! Quisquam.</p>
                   <button className="blog-btn" type="button">Read More</button>
@@ -1156,6 +1157,33 @@ function App() {
               </div>
             </div>
             <div className="col-md-6">
+              <div className="blog-sec mb-4">
+                <img className="blog-sec-img" src={require('./images/blog/cs.jpg').default} width="36%" alt="Blog1"/>
+                <div>
+                  <p className="blog-sec-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, dolore pariatur quam obcaecati illum est ad quo distinctio magnam nulla asperiores corrupti quae quis, vitae minus repellendus officia eveniet! Quisquam.</p>
+                  <button className="blog-btn" type="button">Read More</button>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="blog-sec mb-4">
+                <img className="blog-sec-img" src={require('./images/blog/se.png').default} width="36%" alt="Blog1"/>
+                <div>
+                  <p className="blog-sec-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, dolore pariatur quam obcaecati illum est ad quo distinctio magnam nulla asperiores corrupti quae quis, vitae minus repellendus officia eveniet! Quisquam.</p>
+                  <button className="blog-btn" type="button">Read More</button>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="blog-sec mb-4">
+                <img className="blog-sec-img" src={require('./images/blog/cs.jpg').default} width="36%" alt="Blog1"/>
+                <div>
+                  <p className="blog-sec-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, dolore pariatur quam obcaecati illum est ad quo distinctio magnam nulla asperiores corrupti quae quis, vitae minus repellendus officia eveniet! Quisquam.</p>
+                  <button className="blog-btn" type="button">Read More</button>
+                </div>
+              </div>
+            </div>
+            {/* <div className="col-md-6">
               <div className="blog-sec mb-4">
                 <img className="blog-sec-img" src="./images/design.PNG" width="36%" alt="Blog1"/>
                 
@@ -1182,7 +1210,7 @@ function App() {
                   <button className="blog-btn" type="button">Read More</button>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -1233,7 +1261,10 @@ function App() {
             </div>
             <div className="col-md-6 contact-map-wrapper">
               <div className="contact-map">
-                <img src="./images/map.png" height="100%" width="100%" alt=""/>
+                <img src={require('./images/contact.jpg').default} height="100%" width="100%" alt=""/>
+                {/* <div>
+                  <p>Social Media</p>
+                </div> */}
               </div>
             </div>
           </div>
@@ -1244,36 +1275,37 @@ function App() {
         <div className="container">
           <div className="row">
             <div className="col-md-3">
-              <h5>Bishow Thapa</h5>
-              <p>Software Engineer</p>
+              <h5 class="footer-logo">Bishow Thapa</h5>
+              <p>Developing Quality Software</p>
             </div>
             <div className="col-md-3">
               <h5>Explore</h5>
               <ul className="list-unstyled">
-                  <li><a href="">Home</a></li>
-                  <li><a href="">About</a></li>
-                  <li><a href="">Projects</a></li>
-                  <li><a href="">Service</a></li>
-                  <li><a href="">Blog</a></li>
-                  <li><a href="">Contact</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#project">Projects</a></li>
+                  <li><a href="#service">Service</a></li>
+                  <li><a href="#blog">Blog</a></li>
+                  <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
             <div className="col-md-3">
               <h5>Social Media</h5>
               <ul className="list-unstyled">
-                  <li><a href="">Facebook</a></li>
                   <li><a href="https://www.linkedin.com/in/bishowthapa/" rel="noreferrer noopener" target="_blank" data-tip="bishowthapa">LinkedIn</a></li>
                   <li><a href="https://twitter.com/BishowThapa12" rel="noreferrer noopener" target="_blank" data-tip="@BishowThapa12">Twitter</a></li>
                   <li><a href="https://github.com/Bishow-Thapa" rel="noreferrer noopener" target="_blank" data-tip="Bishow-Thapa">Github</a></li>
-                  <li><a href="">Behance</a></li>
-                  <li><a href="">Instagram</a></li>
+                  <li><a href="https://www.behance.net/bishowthapa" rel="noreferrer noopener" target="_blank" data-tip="Bishow-Thapa">Behance</a></li>
               </ul>
             </div>
             <div className="col-md-3">
               <h5>Address</h5>
+              <p>Kathmandu, Nepal</p>
             </div>
+            
             <div className="col-md-12">
-              <p className="text-center m-0 pt-4">Made with <FaHeart color= "red" /> by Bishow Thapa <span data-tip="copyright"><MdCopyright/></span> {thisyear.getFullYear()}</p> 
+            <hr className="my-5"></hr>
+              <p className="text-center m-0">Made with <FaHeart color= "red" /> by Bishow Thapa <span data-tip="copyright"><MdCopyright/></span> {thisyear.getFullYear()}</p> 
             </div>
           </div>
         </div>

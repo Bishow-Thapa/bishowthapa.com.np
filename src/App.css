@@ -160,6 +160,8 @@ body {
 }
 
 /******************************************************************/
+/* ABOUT Section */
+/******************************************************************/
 
 #about {
   padding: 6rem 0;
@@ -189,7 +191,26 @@ body {
   width: 400px;
 }
 
-/*******************************************************/
+.authorBtn {
+  padding: 0.8em 3em;
+  border: 1px solid #d98f06;
+  border-radius: 34px;
+}
+
+.authorBtn:hover {
+  background: #d98f06;
+  color: #FFFFFF;
+}
+
+.btnTitle {
+  display: inline-block;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-right: 0.8em;
+}
+/******************************************************************/
+/* Project Section */
+/******************************************************************/
 
 #project, #service {
   padding: 6rem 0;
@@ -207,6 +228,10 @@ body {
   background: aliceblue;
   aspect-ratio: 1/1;
 }
+
+/******************************************************************/
+/* Blog Section */
+/******************************************************************/
 
 #blog {
   padding: 6rem 0;
@@ -229,12 +254,26 @@ body {
 }
 
 .blog-sec-img {
+  display: inline-block;
   width: 36%;
   object-fit: cover;
   margin-right: 18px;
 }
 
-/**************************************************************/
+/* added limit number of line using css */
+/* https://stackoverflow.com/questions/3922739/limit-text-length-to-n-lines-using-css */
+.blog-sec-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+          line-clamp: 2; 
+  -webkit-box-orient: vertical;
+}
+
+/******************************************************************/
+/* Contact Section */
+/******************************************************************/
 
 #contact {
   padding: 6rem 0;
@@ -290,7 +329,9 @@ body {
 }
 
 
-/******************************************************/
+/******************************************************************/
+/* Footer Section */
+/******************************************************************/
 
 footer {
   padding: 4rem 0;
@@ -298,6 +339,26 @@ footer {
   background: #1e1d1d;
 }
 
+.footer-logo {
+  font-family: 'Merriweather';
+}
+
+footer p,  footer a {
+  font-weight: 300;
+}
+
+footer ul li {
+  margin-bottom: 0.4em;
+}
+
+footer a {
+  color: #FFFFFF;
+  /* text-decoration: none; */
+}
+
+footer a:hover {
+  color: #d98f06;
+}
 
 
 /******************************************************/
