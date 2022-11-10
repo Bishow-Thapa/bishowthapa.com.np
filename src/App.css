@@ -161,6 +161,12 @@ body {
   color: #ffffff;
   background-color: #d98f06;
   border: 0;
+  box-shadow: 8px 0px 0px 0px #edc36d;
+  transition: all 1s;
+}
+
+.hero-btn:hover {
+  box-shadow: 8px 0px 0px 0px #d98f06;
 }
 
 /******************************************************************/
