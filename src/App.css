@@ -14,8 +14,9 @@ body {
 /*********************************************************************/
 .wrapper-item {
   display: block;
-  height: 360px;
-  /* width: 380px; */
+  aspect-ratio: 1/1;
+  /* height: 360px;
+  width: 380px; */
   position: relative;
 }
 
@@ -232,11 +233,20 @@ body {
 
 .service-sec {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
   background: aliceblue;
   aspect-ratio: 1/1;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.my-service-title {
+  font-size: 1.2em;
+  font-weight: 500;
 }
 
 /******************************************************************/
