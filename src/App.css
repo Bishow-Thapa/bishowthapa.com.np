@@ -14,7 +14,7 @@ body {
 /*********************************************************************/
 .wrapper-item {
   display: block;
-  height: 400px;
+  height: 360px;
   /* width: 380px; */
   position: relative;
 }
@@ -104,8 +104,8 @@ body {
 /***********************************************************************/
 
 .bt-main {
-  /* padding: 6rem 0; */
-  padding: 8rem 0;
+  padding: 6rem 0;
+  /* padding: 8rem 0; */
   background: #a0b1c1;
 }
 
@@ -127,8 +127,10 @@ body {
 }
 
 .hero-description {
-  font-size: 2.4rem;
+  /* font-size: 2.4rem; */
+  font-size: 2.8rem;
   font-weight: bold;
+  margin-bottom: 34px;
 }
 
 .main-section {
@@ -149,8 +151,10 @@ body {
 }
 
 .hero-btn {
-  height: 44px;
-  width: 132px;
+  padding: 14px 50px;
+  /* height: 44px;
+  width: 132px; */
+  font-size: 1.2em;
   text-transform: uppercase;
   font-weight: bold;
   border-radius: 4px;
@@ -247,6 +251,10 @@ body {
   border: 0;
   padding: 4px 16px;
   border-radius: 2px;
+}
+
+.blog-btn-text {
+  margin-right: 4px;
 }
 
 .blog-sec {
@@ -385,6 +393,10 @@ footer a:hover {
   .contact-map-wrapper {
     padding-left: 12px;
   }
+
+  .hero-description {
+    font-size: 2em;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -392,4 +404,16 @@ footer a:hover {
     display: flex;
     flex-wrap: wrap;
   }
+
+  .bt-main {
+    padding: 4em 0;
+  }
+
+  .hero-section {
+    margin-bottom: 6em;
+  }
+
+  /* .bt-col-main-description {
+    margin-bottom: 6em;
+  } */
 }

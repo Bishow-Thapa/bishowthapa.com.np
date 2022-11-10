@@ -8,6 +8,7 @@ import { saveAs } from "file-saver";
 
 import { FaHeart, FaDownload } from "react-icons/fa";
 import { MdCopyright } from 'react-icons/md';
+import { FiExternalLink } from 'react-icons/fi';
 
 const thisyear = new Date();
 
@@ -57,7 +58,7 @@ function App() {
       <section className="bt-main">
         <div className="container">
           <div className="row main-pad">
-            <div className="col-md-6">
+            <div className="col-md-6 bt-col-main-description">
               <div className="hero-section">
                 <span className="hero-title">Software Engineer</span>
                 <p className="hero-description">Developing Quality Software. <br/>Truth can only be found in <br/> one place: the code</p>
@@ -1152,7 +1153,7 @@ function App() {
                 <img className="blog-sec-img" src={require('./images/blog/vcs.jpg').default} width="36%" alt="Blog1"/>
                 <div>
                   <p className="blog-sec-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, dolore pariatur quam obcaecati illum est ad quo distinctio magnam nulla asperiores corrupti quae quis, vitae minus repellendus officia eveniet! Quisquam.</p>
-                  <button className="blog-btn" type="button">Read More</button>
+                  <button className="blog-btn" type="button"><span className="blog-btn-text">Read More</span><FiExternalLink /></button>
                 </div>
               </div>
             </div>
@@ -1161,7 +1162,7 @@ function App() {
                 <img className="blog-sec-img" src={require('./images/blog/cs.jpg').default} width="36%" alt="Blog1"/>
                 <div>
                   <p className="blog-sec-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, dolore pariatur quam obcaecati illum est ad quo distinctio magnam nulla asperiores corrupti quae quis, vitae minus repellendus officia eveniet! Quisquam.</p>
-                  <button className="blog-btn" type="button">Read More</button>
+                  <button className="blog-btn" type="button"><span className="blog-btn-text">Read More</span><FiExternalLink /></button>
                 </div>
               </div>
             </div>
@@ -1170,7 +1171,7 @@ function App() {
                 <img className="blog-sec-img" src={require('./images/blog/se.png').default} width="36%" alt="Blog1"/>
                 <div>
                   <p className="blog-sec-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, dolore pariatur quam obcaecati illum est ad quo distinctio magnam nulla asperiores corrupti quae quis, vitae minus repellendus officia eveniet! Quisquam.</p>
-                  <button className="blog-btn" type="button">Read More</button>
+                  <button className="blog-btn" type="button"><span className="blog-btn-text">Read More</span><FiExternalLink /></button>
                 </div>
               </div>
             </div>
@@ -1179,38 +1180,10 @@ function App() {
                 <img className="blog-sec-img" src={require('./images/blog/cs.jpg').default} width="36%" alt="Blog1"/>
                 <div>
                   <p className="blog-sec-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, dolore pariatur quam obcaecati illum est ad quo distinctio magnam nulla asperiores corrupti quae quis, vitae minus repellendus officia eveniet! Quisquam.</p>
-                  <button className="blog-btn" type="button">Read More</button>
+                  <button className="blog-btn" type="button"><span className="blog-btn-text">Read More</span><FiExternalLink /></button>
                 </div>
               </div>
             </div>
-            {/* <div className="col-md-6">
-              <div className="blog-sec mb-4">
-                <img className="blog-sec-img" src="./images/design.PNG" width="36%" alt="Blog1"/>
-                
-                <div>
-                  <p className="blog-sec-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, dolore pariatur quam obcaecati illum est ad quo distinctio magnam nulla asperiores corrupti quae quis, vitae minus repellendus officia eveniet! Quisquam.</p>
-                  <button className="blog-btn" type="button">Read More</button>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="blog-sec mb-4">
-                <img className="blog-sec-img" src="./images/design.PNG" width="36%" alt="Blog1"/>
-                <div>
-                  <p className="blog-sec-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, dolore pariatur quam obcaecati illum est ad quo distinctio magnam nulla asperiores corrupti quae quis, vitae minus repellendus officia eveniet! Quisquam.</p>
-                  <button className="blog-btn" type="button">Read More</button>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="blog-sec mb-4">
-                <img className="blog-sec-img" src="./images/design.PNG" width="36%" alt="Blog1"/>
-                <div>
-                  <p className="blog-sec-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, dolore pariatur quam obcaecati illum est ad quo distinctio magnam nulla asperiores corrupti quae quis, vitae minus repellendus officia eveniet! Quisquam.</p>
-                  <button className="blog-btn" type="button">Read More</button>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </section>
